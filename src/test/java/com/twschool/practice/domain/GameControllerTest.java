@@ -20,7 +20,7 @@ public class GameControllerTest {
     private MockMvc mockMvc;
     @Test
     public  void should_return_result_when_guess_number() throws Exception{
-        this.mockMvc.perform(MockMvcRequestBuilders.post("/games/guess_numbers")
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/games/guess-numbers")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"number\":\"1 2 3 4\"}"))
                 .andExpect(MockMvcResultMatchers.status().isOk())

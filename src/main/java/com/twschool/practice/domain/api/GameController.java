@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 public class GameController {
-    @PostMapping("/games/guess_numbers")
+    @PostMapping("/games/guess-numbers")
     public Map<String,String> guess(@RequestBody Map<String,String> requestBody){
         Map<String,String> responseBody = new HashMap<>();
         responseBody.put("input",requestBody.get("number"));
